@@ -1,0 +1,18 @@
+#!/bin/sh
+
+if [ "$#" -lt 1 ]
+then
+    echo "Greps the output of 'xe' commands to find UUIDS in order to "
+    echo "perform bulk operations on vm/template images."
+    echo ""
+    echo "Usage:   $0 <VM NAME>"
+    echo "Example: xe vm-list | $0 Windows"
+    echo "         xe template-list | $0 CentOS"
+    exit
+fi
+
+
+text="$1"
+stdin=`cat /dev/stdin`
+
+echo "$stdin" |  grep -B 1 "$text" | grep -vE "$text" | grep -vE "^--$" | awk '{ print $5 }'
