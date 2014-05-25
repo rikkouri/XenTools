@@ -40,6 +40,7 @@ uuid ( RO)           : 8fda69c5-c538-e683-1943-462408ebdb18
 $> xe vm-list | xe-find-uuid Windows
 4aaf9c85-3110-eeff-e044-00d3976e70f6
 4aaf9c85-5481-eeff-e044-1a4c115725f3
+...
 ```
 
 ###Now what?
