@@ -8,10 +8,10 @@ XE Find UUID
 
 ###What:
 
-Reads the output of Xen binaries like 'xe vm-list' and 'xe template-list' and allows you to grep the name-label, returning the uuid for that instance.
+Reads the output of Xen binaries like *xe vm-list* and *xe template-list* and allows you to grep the name-label, returning the uuid for that instance.
 
 ###Why:
-Although I love the simplicity of managing XenServer, I don't find the pretty output (example below) of 'xe' perticularly helpful when trying to perform bulk operations on multiple instances. 
+Although I love the simplicity of managing XenServer, I don't find the pretty output (example below) of *xe* perticularly helpful when trying to perform bulk operations on multiple instances. 
 
 ```
 $> xe vm-list
